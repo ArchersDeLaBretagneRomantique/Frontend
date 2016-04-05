@@ -8,15 +8,22 @@ const ArticleList = ({
   articles,
   actions
 }) => {
+  console.log('yolo');
+  if (articles.length === 0) {
+    return (
+      <h3 className="text-center">Aucun article n'est disponible pour le moment.</h3>
+    );
+  }
   return (
     <div>
-      {articles.map(article => <Article article={article} />)}
+      {articles.map(article => <Article article={article} key={article.id} />)}
     </div>
   );
 };
 
 ArticleList.propTypes = {
-  articles: PropTypes.array.isRequired
+  articles: PropTypes.array.isRequired,
+  actions: PropTypes.object.isRequired
 };
 
 const mapStateToProps = state => {

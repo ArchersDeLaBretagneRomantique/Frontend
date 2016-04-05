@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 
 class Map extends Component {
-  propTypes: {
+  static propTypes = {
     coord: PropTypes.object.isRequired
   }
 

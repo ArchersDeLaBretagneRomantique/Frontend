@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import NavBar from './NavBar';
+import Footer from './Footer';
 
 const App = ({
   children
@@ -8,6 +9,7 @@ const App = ({
     <div className="container">
       <NavBar />
       {children}
+      <Footer />
     </div>
   );
 };
