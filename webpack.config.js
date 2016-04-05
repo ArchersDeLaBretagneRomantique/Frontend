@@ -9,6 +9,13 @@ const developmentEnvironment = 'development' ;
 const productionEnvironment = 'production';
 const testEnvironment = 'test';
 
+
+const SASS_INCLUDES_PATHS = [
+  'node_modules/bootstrap-sass/assets/stylesheets',
+  'node_modules/bootstrap-sass/assets/fonts',
+  'node_modules/bootswatch/journal'
+];
+
 const getPlugins = function (env) {
   const GLOBALS = {
     'process.env.NODE_ENV': JSON.stringify(env),
@@ -77,6 +84,9 @@ function getConfig(env) {
     plugins: getPlugins(env),
     module: {
       loaders: getLoaders(env)
+    },
+    sassLoader: {
+      includePaths: SASS_INCLUDES_PATHS
     }
   };
 }

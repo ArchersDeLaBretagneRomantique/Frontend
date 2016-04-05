@@ -1,12 +1,13 @@
 import React, { PropTypes } from 'react';
-import { Link, IndexLink } from 'react-router';
+import NavBar from './NavBar';
 
-const App = (props) => {
+const App = ({
+  children
+}) => {
   return (
-    <div>
-      <IndexLink to="/">Accueil</IndexLink>
-      <br/>
-      {props.children}
+    <div className="container">
+      <NavBar />
+      {children}
     </div>
   );
 };

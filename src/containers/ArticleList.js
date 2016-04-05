@@ -4,32 +4,31 @@ import { bindActionCreators } from 'redux';
 import * as actions from '../actions/articleActions';
 import Article from '../components/Article';
 
-class ArticleList extends Component {
-  render() {
-    return (
-      <div>
-        { this.props.articles.map(article =>
-          <Article article={article}></Article>
-        )}
-      </div>
-    );
-  }
-}
-
-ArticleList.propTypes = {
-  articles: PropTypes.object.isRequired
+const ArticleList = ({
+  articles,
+  actions
+}) => {
+  return (
+    <div>
+      {articles.map(article => <Article article={article} />)}
+    </div>
+  );
 };
 
-function mapStateToProps(state) {
+ArticleList.propTypes = {
+  articles: PropTypes.array.isRequired
+};
+
+const mapStateToProps = state => {
   return {
     articles: state.articles
   };
-}
+};
 
-function mapDispatchToProps(dispatch) {
+const mapDispatchToProps = dispatch => {
   return {
     actions: bindActionCreators(actions, dispatch)
   };
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(ArticleList);
