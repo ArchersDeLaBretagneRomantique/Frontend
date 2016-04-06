@@ -1,10 +1,11 @@
 language: node_js
-node_js: "4"
+node_js:
+  - "4"
 env:
   global:
     - secure: YqyWqMIghwcG0f2jDSTW4AIW7Yq1R1NieNRUXgmV7wAuEb9IMPmUlzATsG7VF7QgUOHJOVqqfCQV2iZ8dTbE+e/jkpc8XKXF/n3lakM/XzGL7EuZ5zh+Tg0lhBfpFUKXlbi3HKhI0VsPEST6xiKJiIgQ4bZ8ZG3lF24WhwND8Ydr++MFGzdECwa0KQmI3SfAd0hJS00sNDmdUoNmmtMkcedtFEpGdeKmbbUX2iLN53kXv/OqDkKsK8nFUNW5OozVq9RVki3jSaW0+FjYOqMul/i08Jft9iOziVPHR7VlO9VOHiu3DV0aBVxkTND2e7il8QinIoJM7qDZ2iLnXDHPCiTZ/31eCWdOj6rJLF3xiOQhPtZOQBLbhGhWr687CCBsAx/g5fOOfxBQrXDbmsTYeD/pgbc88r1+ZDQetEy/KLuKaRXO5kvp4FEAKt2GU5yGXCQiPMOIiVYn87WXpPJ4alG+zbzmcO+lpI6CVPYEN8YUDBCpFlSdYr5GXvBeIDkeXNJMZZ+exQZ5Fjf3Nc5O2OUekkLMho4EcVQJjJ3nGWXqKB/ZLAhC/HDtXsNleF1jJf2hqBNH2bKqhXzZemz1M5eTs39bKOSmfplyuy3a1OahPhUsO6LOKKIjE3zK45Zd47Ojsqx4eM+n43SsrDsDgY9PXL6pVKtSKZTJnBA77QE=
 script: npm run build
-deploy: bash .utility/deploy.sh
+after_success: bash .utility/deploy.sh
 notifications:
   email:
     on_failure: change
