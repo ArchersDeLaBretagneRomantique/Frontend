@@ -8,7 +8,6 @@ const ArticleList = ({
   articles,
   actions
 }) => {
-  console.log('yolo');
   if (articles.length === 0) {
     return (
       <h3 className="text-center">Aucun article n'est disponible pour le moment.</h3>

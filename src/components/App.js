@@ -3,11 +3,12 @@ import NavBar from './NavBar';
 import Footer from './Footer';
 
 const App = ({
+  location,
   children
 }) => {
   return (
     <div className="container">
-      <NavBar />
+      <NavBar location={location}/>
       {children}
       <Footer />
     </div>
@@ -15,6 +16,7 @@ const App = ({
 };
 
 App.propTypes = {
+  location: PropTypes.object,
   children: PropTypes.element
 };
 
