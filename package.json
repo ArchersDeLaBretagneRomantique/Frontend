@@ -1,0 +1,60 @@
+{
+  "name": "abr_frontend",
+  "version": "0.2.0",
+  "description": "Les Archers de la Bretagne Romantique (frontend)",
+  "scripts": {
+    "start": "NODE_ENV=test webpack-dev-server --inline --hot --port=3000 --history-api-fallback",
+    "lint": "eslint app/",
+    "test": "NODE_ENV=test mocha --reporter progress --compilers js:babel-core/register --recursive \"./app/**/*.spec.js\" --require ignore-styles",
+    "build": "NODE_ENV=production webpack --define process.env.NODE_ENV='\"production\"' -p ",
+    "postinstall": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArchersDeLaBretagneRomantique/Frontend"
+  },
+  "keywords": [
+    "react",
+    "redux"
+  ],
+  "author": "Benoit Travers <benoit.travers.fr@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArchersDeLaBretagneRomantique/Frontend/issues"
+  },
+  "homepage": "https://github.com/ArchersDeLaBretagneRomantique/Frontend#readme",
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.4",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^3.0.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-react": "^5.2.2",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "mocha": "^2.5.3",
+    "node-sass": "^3.8.0",
+    "react-hot-loader": "^1.3.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "fetch-polyfill": "^0.8.2",
+    "immutable": "^3.8.1",
+    "normalize.css": "^4.2.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.5.2",
+    "react-router-redux": "^4.0.5",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0"
+  }
+}
