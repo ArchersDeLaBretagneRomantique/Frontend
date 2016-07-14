@@ -20,20 +20,8 @@ function getJsLoaders(loaders) {
   return loaders
 }
 
-function getStyleLoaders(loaders) {
-  if (prod) {
-    loaders.push(ExtractTextPlugin.extract('style', 'css', 'sass'))
-  } else {
-    loaders.push('style')
-    loaders.push('css?sourceMap')
-    loaders.push('sass?sourceMap')
-  }
-  return loaders
-}
-
 function getPlugins(plugins) {
   if (prod) {
-    plugins.push(new ExtractTextPlugin('styles.css'))
     plugins.push(new webpack.optimize.DedupePlugin())
     plugins.push(new webpack.optimize.UglifyJsPlugin())
   } else {
@@ -66,7 +54,7 @@ module.exports = {
       },
       {
         test: /\.s?css$/,
-        loaders: getStyleLoaders([]),
+        loaders: ['style', 'css', 'sass'],
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,

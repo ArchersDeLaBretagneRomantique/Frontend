@@ -7,13 +7,13 @@ import reducers from '../reducers'
 
 const store = createStore(
   reducers,
-  null,
+  {},
   compose(
     applyMiddleware(
       thunkMiddleware,
-      routerMiddleware(browserHistory),
-      window.devTooldExtendion ? window.devToolsExtension() : f => f,
-    )
+      routerMiddleware(browserHistory)
+    ),
+    window.devTooldExtendion ? window.devToolsExtension() : f => f,
   )
 )
 

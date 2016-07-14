@@ -1,5 +1,9 @@
 import { combineReducers } from 'redux'
 
-const reducers = combineReducers({})
+import articles from './articles'
+
+const reducers = combineReducers({
+  articles,
+})
 
 export default reducers

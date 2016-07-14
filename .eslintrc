@@ -1,9 +1,6 @@
 {
   "parser": "babel-eslint",
   "extends": "airbnb",
-  "settings": {
-    "import/resolver": "webpack"
-  },
   "rules": {
       "semi": [2, "never"],
       "arrow-body-style": 0

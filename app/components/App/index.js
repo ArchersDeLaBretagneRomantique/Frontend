@@ -1,1 +1,1 @@
-export defaulf from './App'
+export default from './App'
