@@ -10,30 +10,28 @@ class Map extends Component {
   componentDidMount() {
     const { lat, lng } = this.props
 
-    const center = new window.google.maps.LatLng(lat, lng)
-
-    const mapOptions = {
-      zoom: 15,
-      center,
+    const center = {
+      lat,
+      lng,
     }
 
-    const markerOptions = {
+    const map = new window.google.maps.Map(ReactDOM.findDOMNode(this), {
+      zoom: 15,
+      center,
+      scrollwheel: false,
+    })
+
+    const marker = new window.google.maps.Marker({
       position: center,
       defaultAnimation: 2,
       draggable: false,
-    }
-
-    const map = new window.google.maps.Map(ReactDOM.findDOMNode(this), mapOptions)
-
-    const marker = new window.google.maps.Marker({
-      ...markerOptions,
       map,
     })
   }
 
   render() {
     return (
-      <div className="map" />
+      <div />
     )
   }
 }

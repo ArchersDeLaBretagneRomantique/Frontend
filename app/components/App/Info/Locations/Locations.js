@@ -20,15 +20,15 @@ const Locations = () => {
         title="Tir en intérieur"
         coord={indoorMapCoord}
       >
-        <strong>Complexe Sportif de la Bretagne Romantique</strong>
-        5 rue Ernest Renan
+        <strong>Complexe Sportif de la Bretagne Romantique</strong><br />
+        5 rue Ernest Renan<br />
         35190 TINTENIAC
       </Place>
       <Place
         title="Tir en extérieur"
         coord={outdoorMapCoord}
       >
-        Le Grand-Bois
+        Le Grand-Bois<br />
         35190 QUEBRIAC
       </Place>
     </div>

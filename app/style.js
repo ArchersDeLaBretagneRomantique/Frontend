@@ -1,0 +1,38 @@
+import {
+  primary1Color,
+  primary2Color,
+  primary3Color,
+  accent1Color,
+  accent2Color,
+  accent3Color,
+  textColor,
+  secondaryTextColor,
+  alternateTextColor,
+  canvasColor,
+  borderColor,
+  disabledColor,
+  pickerHeaderColor,
+  clockCircleColor,
+  shadowColor,
+} from './styles'
+
+export default {
+  fontFamily: 'Roboto, sans-serif',
+  palette: {
+    primary1Color,
+    primary2Color,
+    primary3Color,
+    accent1Color,
+    accent2Color,
+    accent3Color,
+    textColor,
+    secondaryTextColor,
+    alternateTextColor,
+    canvasColor,
+    borderColor,
+    disabledColor,
+    pickerHeaderColor,
+    clockCircleColor,
+    shadowColor,
+  },
+}

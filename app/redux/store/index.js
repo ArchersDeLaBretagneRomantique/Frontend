@@ -5,15 +5,13 @@ import thunkMiddleware from 'redux-thunk'
 
 import reducers from '../reducers'
 
+const routeMiddleware = routerMiddleware(browserHistory)
 const store = createStore(
   reducers,
   {},
   compose(
-    applyMiddleware(
-      thunkMiddleware,
-      routerMiddleware(browserHistory)
-    ),
-    window.devTooldExtendion ? window.devToolsExtension() : f => f,
+    applyMiddleware(thunkMiddleware, routeMiddleware),
+    window.devToolsExtension ? window.devToolsExtension() : f => f,
   )
 )
 

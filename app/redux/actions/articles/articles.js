@@ -5,3 +5,10 @@ export const setArticles = (articles) => {
     articles,
   }
 }
+
+export const fetchArticles = () => {
+  return (dispatch) => {
+    const articles = []
+    dispatch(setArticles(articles))
+  }
+}

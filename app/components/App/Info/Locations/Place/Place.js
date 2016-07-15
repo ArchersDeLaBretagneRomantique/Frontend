@@ -18,7 +18,7 @@ Place.propTypes = {
     lat: PropTypes.number.isRequired,
     lng: PropTypes.number.isRequired,
   }),
-  children: PropTypes.object.isRequired,
+  children: PropTypes.any,
 }
 
 export default Place

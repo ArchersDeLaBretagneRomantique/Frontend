@@ -1,77 +1,18 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 
 import Training from './Training'
 
-const trainings = [
-  {
-    title: 'Jeunes débutants',
-    schedules: [
-      {
-        day: 'Mercredi',
-        hour: '18h00 - 19h00',
-      },
-      {
-        day: 'Samedi',
-        hour: '16h00 - 17h00',
-      },
-    ],
-  },
-  {
-    title: 'Jeunes Confirmés',
-    schedules: [
-      {
-        day: 'Lundi',
-        hour: '18h00 - 20h00',
-      },
-      {
-        day: 'Mercredi',
-        hour: '18h00 - 20h00',
-      },
-      {
-        day: 'Samedi',
-        hour: '16h00 - 18h30',
-      },
-    ],
-  },
-  {
-    title: 'Jeunes Compétiteurs',
-    schedules: [
-      {
-        day: 'Lundi',
-        hour: '18h00 - 20h00',
-      },
-      {
-        day: 'Mercredi',
-        hour: '18h00 - 20h00',
-      },
-      {
-        day: 'Samedi',
-        hour: '17h00 - 20h00',
-      },
-    ],
-  },
-  {
-    title: 'Adultes',
-    schedules: [
-      {
-        day: 'Lundi',
-        hour: '19h00 - 22h00',
-      },
-      {
-        day: 'Samedi',
-        hour: '20h00 - 22h00',
-      },
-    ],
-  },
-]
-
-const Trainings = () => {
+const Trainings = ({ trainings }) => {
   return (
     <div>
       <h3>Horaires</h3>
-      {trainings.map(training => <Training {...training} />)}
+      {trainings.map((training, i) => <Training key={i} {...training} />)}
     </div>
   )
+}
+
+Trainings.propTypes = {
+  trainings: PropTypes.array.isRequired,
 }
 
 export default Trainings
