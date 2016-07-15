@@ -12,6 +12,7 @@ const outdoorMapCoord = {
   lng: -1.827651,
 }
 
+// TODO move content in specific file
 const Locations = () => {
   return (
     <div>

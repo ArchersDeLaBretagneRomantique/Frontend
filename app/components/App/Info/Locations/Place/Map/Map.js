@@ -21,6 +21,7 @@ class Map extends Component {
       scrollwheel: false,
     })
 
+    // eslint-disable-next-line
     const marker = new window.google.maps.Marker({
       position: center,
       defaultAnimation: 2,

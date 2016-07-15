@@ -1,5 +1,8 @@
+/* eslint-disable */
+
 import React from 'react'
 
+// TODO move content in specific file
 const Subscribtion = () => {
   return (
     <div>
