@@ -1,4 +1,4 @@
-import { SET_ARTICLES } from 'redux/actions'
+import { SET_ARTICLES } from '../../actions'
 
 export default (state = [], action) => {
   switch (action.type) {

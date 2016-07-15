@@ -1,4 +1,4 @@
-import { SET_ALBUMS } from 'redux/actions'
+import { SET_ALBUMS } from '../../actions'
 
 export default (state = [], action) => {
   switch (action.type) {
