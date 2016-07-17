@@ -13,7 +13,7 @@ const FlatButton = ({ label, onClick, active }) => {
       className={classes}
       onClick={onClick}
     >
-      <div className={styles.label}>{label}</div>
+      <span className={styles.label}>{label}</span>
     </button>
   )
 }
@@ -21,7 +21,7 @@ const FlatButton = ({ label, onClick, active }) => {
 FlatButton.propTypes = {
   label: PropTypes.string,
   onClick: PropTypes.func.isRequired,
-  active: PropTypes.bool.isRequired,
+  active: PropTypes.bool,
 }
 
 export default FlatButton

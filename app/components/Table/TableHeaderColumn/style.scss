@@ -1,3 +1,13 @@
+@import '~styles/colors';
+
 .tableHeaderColumn {
-  
+  border-top: 0;
+  vertical-align: bottom;
+  border-bottom: 2px solid $border;
+  padding: 8px;
+  text-align: left;
+  font-weight: bold;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  width: 100%;
 }

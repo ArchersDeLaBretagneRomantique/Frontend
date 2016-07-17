@@ -1,13 +1,17 @@
 import React, { PropTypes } from 'react'
 
 import Map from './Map'
+import Address from 'components/Address'
+import styles from './style.scss'
 
 const Place = ({ title, coord, children }) => {
   return (
-    <div>
+    <div className={styles.container}>
       <h4>{title}</h4>
       <Map {...coord} />
-      <address>{children}</address>
+      <Address>
+        {children}
+      </Address>
     </div>
   )
 }

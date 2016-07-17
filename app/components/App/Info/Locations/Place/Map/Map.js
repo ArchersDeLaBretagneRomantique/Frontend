@@ -1,6 +1,8 @@
 import React, { Component, PropTypes } from 'react'
 import ReactDOM from 'react-dom'
 
+import styles from './style.scss'
+
 class Map extends Component {
   static propTypes = {
     lat: PropTypes.number.isRequired,
@@ -32,7 +34,7 @@ class Map extends Component {
 
   render() {
     return (
-      <div />
+      <div className={styles.map} />
     )
   }
 }

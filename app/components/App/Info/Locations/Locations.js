@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Place from './Place'
+import styles from './style.scss'
 
 const indoorMapCoord = {
   lat: 48.332637,
@@ -17,21 +18,23 @@ const Locations = () => {
   return (
     <div>
       <h3>Localisations</h3>
-      <Place
-        title="Tir en intérieur"
-        coord={indoorMapCoord}
-      >
-        <strong>Complexe Sportif de la Bretagne Romantique</strong><br />
-        5 rue Ernest Renan<br />
-        35190 TINTENIAC
-      </Place>
-      <Place
-        title="Tir en extérieur"
-        coord={outdoorMapCoord}
-      >
-        Le Grand-Bois<br />
-        35190 QUEBRIAC
-      </Place>
+      <div className={styles.locations}>
+        <Place
+          title="Tir en intérieur"
+          coord={indoorMapCoord}
+        >
+          <strong>Complexe Sportif de la Bretagne Romantique</strong><br />
+          5 rue Ernest Renan<br />
+          35190 TINTENIAC
+        </Place>
+        <Place
+          title="Tir en extérieur"
+          coord={outdoorMapCoord}
+        >
+          Le Grand-Bois<br />
+          35190 QUEBRIAC
+        </Place>
+      </div>
     </div>
   )
 }

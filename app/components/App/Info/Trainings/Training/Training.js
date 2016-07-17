@@ -5,27 +5,20 @@ import Table, {
   TableHeader, TableHeaderColumn,
   TableBody, TableRowColumn,
 } from 'components/Table'
+import styles from './style.scss'
 
 const Training = ({ title, schedules }) => {
   return (
-    <div>
+    <div className={styles.container}>
       <h4>{title}</h4>
-      <Table
-        selectable={false}
-      >
-        <TableHeader
-          displaySelectAll={false}
-          adjustForCheckbox={false}
-        >
+      <Table>
+        <TableHeader>
           <TableRow>
             <TableHeaderColumn>Jour</TableHeaderColumn>
             <TableHeaderColumn>Plage horaire</TableHeaderColumn>
           </TableRow>
         </TableHeader>
-        <TableBody
-          displayRowCheckbox={false}
-          showRowHover
-        >
+        <TableBody>
           {schedules.map(({ day, hour }, i) => {
             return (
               <TableRow key={i}>

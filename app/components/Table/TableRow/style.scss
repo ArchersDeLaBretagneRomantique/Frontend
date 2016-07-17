@@ -1,3 +1,7 @@
 .tableRow {
-  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  border-collapse: collapse
 }

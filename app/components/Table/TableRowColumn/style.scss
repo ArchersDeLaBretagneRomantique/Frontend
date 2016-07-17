@@ -1,3 +1,10 @@
-.tableRowColumn {
+@import '~styles/colors';
 
+.tableRowColumn {
+  padding: 8px;
+  vertical-align: top;
+  border-top: 1px solid $border;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  width: 100%;
 }

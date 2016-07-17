@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Banner from 'components/Banner'
 import Subscribtion from './Subscribtion'
 import Trainings from './Trainings'
 import Locations from './Locations'
@@ -8,7 +9,7 @@ import Contacts from './Contacts'
 const Info = () => {
   return (
     <div>
-      <h2>Informations</h2>
+      <Banner title="Informations" />
       <Subscribtion />
       <Trainings />
       <Locations />

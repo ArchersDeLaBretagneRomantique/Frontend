@@ -1,4 +1,19 @@
+@import '~styles/colors';
+
 .app {
-  font-family: 'Roboto, sans-serif';
-  font-style: normal;
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: $text;
+  text-align: justify;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  box-sizing: border-box;
 }

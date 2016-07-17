@@ -2,11 +2,13 @@
 
 import React from 'react'
 
+import Banner from 'components/Banner'
+
 // TODO move content in specific file
 const Presentation = () => {
   return (
     <div>
-      <h2>Présentation</h2>
+      <Banner title="Présentation" />
       <p>Le club de Tinténiac a été créé au printemps 2001 par Pierre LELU. Lors de sa première saison sportive (2002) les effectifs étaient de 18 licenciés dont 6 jeunes. Son fondateur a tenu, dès le début, à orienter les actions vers les jeunes et l’intégration des personnes en difficultés. Les actions développées par le club doivent lui permettre d’atteindre les objectifs généraux : </p>
 
       <ul>

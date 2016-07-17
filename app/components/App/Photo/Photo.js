@@ -1,9 +1,11 @@
 import React from 'react'
 
+import Banner from 'components/Banner'
+
 const Photo = () => {
   return (
     <div>
-      <h2>Galerie photo</h2>
+      <Banner title="Galerie photo" />
     </div>
   )
 }

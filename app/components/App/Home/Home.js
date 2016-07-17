@@ -1,11 +1,12 @@
 import React from 'react'
 
 import Articles from './Articles'
+import Banner from './Banner'
 
 const Home = () => {
   return (
     <div>
-      <h2>Actualité</h2>
+      <Banner />
       <Articles />
     </div>
   )
