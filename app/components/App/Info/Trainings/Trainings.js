@@ -6,7 +6,7 @@ import styles from './style.scss'
 const Trainings = ({ trainings }) => {
   return (
     <div>
-      <h3>Horaires</h3>
+      <h2>Horaires</h2>
       <div className={styles.trainings}>
         {trainings.map((training, i) => <Training key={i} {...training} />)}
       </div>

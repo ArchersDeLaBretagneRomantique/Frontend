@@ -7,7 +7,7 @@ import styles from './style.scss'
 const Place = ({ title, coord, children }) => {
   return (
     <div className={styles.container}>
-      <h4>{title}</h4>
+      <h3>{title}</h3>
       <Map {...coord} />
       <Address>
         {children}

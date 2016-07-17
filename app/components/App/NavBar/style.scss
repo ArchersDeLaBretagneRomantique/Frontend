@@ -21,11 +21,12 @@
 
 .title {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 22px;
   color: $muted;
   margin-top: 0;
   margin-bottom: 0;
   line-height: 36px;
+  text-transform: uppercase;
 }
 
 .title:hover {

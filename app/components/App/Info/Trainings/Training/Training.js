@@ -10,7 +10,7 @@ import styles from './style.scss'
 const Training = ({ title, schedules }) => {
   return (
     <div className={styles.container}>
-      <h4>{title}</h4>
+      <h3>{title}</h3>
       <Table>
         <TableHeader>
           <TableRow>

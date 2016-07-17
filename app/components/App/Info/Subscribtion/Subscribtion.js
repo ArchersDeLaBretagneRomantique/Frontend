@@ -6,7 +6,7 @@ import React from 'react'
 const Subscribtion = () => {
   return (
     <div>
-      <h3>Inscription</h3>
+      <h2>Inscription</h2>
       <p>
         Le montant de la cotisation est de 95€ pour les moins de 20 ans et de 130€ pour les adultes.
         Un certificat médical de moins de deux mois avec la mension "pratique du tir à l'Arc en compétition sans contre-indication à la pratique d'activités quelles que soient" est demandé le jour de l'inscription.

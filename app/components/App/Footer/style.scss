@@ -3,12 +3,13 @@
 .footer {
   border-top-width: 1px;
   border-top-style: solid;
-  border-top-color: #e5e5e5;
+  border-top-color: $border;
 
   padding-top: 20px;
   padding-right: 15px;
   padding-right: 15px;
 
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 300;
   color: $footer;
 }

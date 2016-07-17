@@ -17,7 +17,7 @@ const outdoorMapCoord = {
 const Locations = () => {
   return (
     <div>
-      <h3>Localisations</h3>
+      <h2>Localisations</h2>
       <div className={styles.locations}>
         <Place
           title="Tir en intérieur"
