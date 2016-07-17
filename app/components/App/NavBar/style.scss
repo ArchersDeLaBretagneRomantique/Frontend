@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #e5e5e5;
+}
+
+.nav {
+
+}
+
+.title {
+  font-weight: 700;
+  font-size: 26px;
+  color: #999;
+}
+
+.title:hover {
+  color: #e91e63;
+  cursor: pointer;
+}

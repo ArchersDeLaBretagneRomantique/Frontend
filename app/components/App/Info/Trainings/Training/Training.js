@@ -1,11 +1,10 @@
 import React, { PropTypes } from 'react'
 
-import {
-  Table,
+import Table, {
   TableRow,
   TableHeader, TableHeaderColumn,
   TableBody, TableRowColumn,
-} from 'material-ui/Table'
+} from 'components/Table'
 
 const Training = ({ title, schedules }) => {
   return (

@@ -1,12 +1,16 @@
 import React, { PropTypes } from 'react'
 
 import NavBar from './NavBar'
+import Footer from './Footer'
+
+import styles from './style.scss'
 
 const App = ({ children, location }) => {
   return (
-    <div>
+    <div className={styles.app}>
       <NavBar location={location} />
       {children}
+      <Footer />
     </div>
   )
 }

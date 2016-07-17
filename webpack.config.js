@@ -1,6 +1,5 @@
 const webpack = require('webpack')
 const path = require('path')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const prod = process.env.NODE_ENV === 'production'
 
@@ -54,7 +53,11 @@ module.exports = {
       },
       {
         test: /\.s?css$/,
-        loaders: ['style', 'css', 'sass'],
+        loaders: [
+          'style',
+          'css?modules&localIdentName=[path]_[local]__[hash:base64:5]',
+          'sass',
+        ],
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
